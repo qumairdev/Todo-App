@@ -1,11 +1,16 @@
-// const input = document.querySelector("#inptut")
-
-// function addTodo
-
-let fruits = ["Mango" , "Orange" , "Banana"]
 const ol = document.querySelector(".list")
+const input = document.querySelector("#input")
+const arr = []
 
-for(let i = 0 ; i < fruits.length ; i++){
-    console.log(fruits[i]);
-    ol.innerHTML += `<li>${fruits[i]}</li>`
+function addTodo(){
+    console.log(input.value);
+    input.value = ""
+    arr.push (input.values)
+    
+
+    for (let i = 1 ;i < arr.length ; i++){
+        ol.innerHTML += `<li>${arr[i]}</li>`
+        console.log(arr)
+    }
+    
 }
